@@ -9,6 +9,8 @@ import SwiftUI
 
 struct LoginPage: View {
     @StateObject var loginViewModel = LoginViewModel();
+    @EnvironmentObject var globalViewModel: GlobalViewModel
+    
     var body: some View {
         VStack {
             Text("WeChat")
@@ -26,6 +28,7 @@ struct LoginPage: View {
             
             Button(action: {
                 loginViewModel.login()
+                globalViewModel.loginStatus.toggle()
             }, label: {
                 Text("ログイン")
                     .modifier(LargeButtonLabelStyle())
@@ -49,5 +52,6 @@ struct LoginPage_Previews: PreviewProvider {
         NavigationView {
             LoginPage()
         }
+        .environmentObject(GlobalViewModel())
     }
 }

@@ -8,23 +8,22 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var globalViewModel = GlobalViewModel()
-    @AppStorage("login_status") var loginStatus: Bool = false
+    @EnvironmentObject var globalViewModel: GlobalViewModel
     
     var body: some View {
         NavigationView {
-            if loginStatus {
+            if globalViewModel.loginStatus {
                 HomePage()
             } else {
                 LoginPage()
             }
         }
-        .environmentObject(globalViewModel)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(GlobalViewModel())
     }
 }

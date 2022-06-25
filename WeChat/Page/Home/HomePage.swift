@@ -10,7 +10,6 @@ import SwiftUI
 struct HomePage: View {
     @EnvironmentObject var globalViewModel: GlobalViewModel
     
-    
     var body: some View {
         VStack {
             Text("Home Page")

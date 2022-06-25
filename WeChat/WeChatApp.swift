@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct WeChatApp: App {
+    @StateObject var globalViewModel = GlobalViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(globalViewModel)
         }
     }
 }
