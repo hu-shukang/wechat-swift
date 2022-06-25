@@ -14,7 +14,7 @@ struct HomePage: View {
     var body: some View {
         VStack(spacing: 0) {
             TabView(selection: $homeViewModel.activeTab) {
-                Text("チャット")
+                ChatPage()
                     .tag("chat")
                     .tabItem {
                         Label("チャット", systemImage: "message.fill")
@@ -36,12 +36,26 @@ struct HomePage: View {
                     }
             }
         }
+        .navigationTitle(Text(homeViewModel.title))
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbar(content: {
+            ToolbarItem(placement: .navigationBarTrailing, content: {
+                if homeViewModel.toolBarImage != nil {
+                    Button(action: {}, label: {
+                        Image(systemName: homeViewModel.toolBarImage!)
+                            .foregroundColor(.black)
+                    })
+                }
+            })
+        })
     }
 }
 
 struct HomePage_Previews: PreviewProvider {
     static var previews: some View {
-        HomePage()
-            .environmentObject(GlobalViewModel())
+        NavigationView {
+            HomePage()
+                .environmentObject(GlobalViewModel())
+        }
     }
 }

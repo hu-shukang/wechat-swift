@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		75A5D81F2867CB02001BC141 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D81E2867CB02001BC141 /* HomeViewModel.swift */; };
+		75A5D8222867D30A001BC141 /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D8212867D30A001BC141 /* ChatPage.swift */; };
 		75CFC1172866CFE40025AE12 /* WeChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC1162866CFE40025AE12 /* WeChatApp.swift */; };
 		75CFC1192866CFE40025AE12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC1182866CFE40025AE12 /* ContentView.swift */; };
 		75CFC11B2866CFE60025AE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CFC11A2866CFE60025AE12 /* Assets.xcassets */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		75A5D81E2867CB02001BC141 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		75A5D8212867D30A001BC141 /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
 		75CFC1132866CFE40025AE12 /* WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CFC1162866CFE40025AE12 /* WeChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatApp.swift; sourceTree = "<group>"; };
 		75CFC1182866CFE40025AE12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75A5D8202867D2F1001BC141 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				75A5D8212867D30A001BC141 /* ChatPage.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		75CFC10A2866CFE40025AE12 = {
 			isa = PBXGroup;
 			children = (
@@ -86,6 +96,7 @@
 		75CFC1242866D3790025AE12 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				75A5D8202867D2F1001BC141 /* Chat */,
 				75CFC1342866E2100025AE12 /* Home */,
 				75CFC1282866D3A50025AE12 /* Login */,
 			);
@@ -194,6 +205,7 @@
 				75A5D81F2867CB02001BC141 /* HomeViewModel.swift in Sources */,
 				75CFC1332866E15F0025AE12 /* GlobalViewModel.swift in Sources */,
 				75CFC1302866D8D70025AE12 /* Style.swift in Sources */,
+				75A5D8222867D30A001BC141 /* ChatPage.swift in Sources */,
 				75CFC12C2866D6F40025AE12 /* LoginViewModel.swift in Sources */,
 				75CFC1192866CFE40025AE12 /* ContentView.swift in Sources */,
 				75CFC1272866D39E0025AE12 /* LoginPage.swift in Sources */,
