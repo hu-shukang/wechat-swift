@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75A5D81F2867CB02001BC141 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D81E2867CB02001BC141 /* HomeViewModel.swift */; };
 		75CFC1172866CFE40025AE12 /* WeChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC1162866CFE40025AE12 /* WeChatApp.swift */; };
 		75CFC1192866CFE40025AE12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC1182866CFE40025AE12 /* ContentView.swift */; };
 		75CFC11B2866CFE60025AE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CFC11A2866CFE60025AE12 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		75A5D81E2867CB02001BC141 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		75CFC1132866CFE40025AE12 /* WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CFC1162866CFE40025AE12 /* WeChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatApp.swift; sourceTree = "<group>"; };
 		75CFC1182866CFE40025AE12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -113,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				75CFC1352866E21E0025AE12 /* HomePage.swift */,
+				75A5D81E2867CB02001BC141 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CFC12E2866D7A80025AE12 /* Extensions.swift in Sources */,
+				75A5D81F2867CB02001BC141 /* HomeViewModel.swift in Sources */,
 				75CFC1332866E15F0025AE12 /* GlobalViewModel.swift in Sources */,
 				75CFC1302866D8D70025AE12 /* Style.swift in Sources */,
 				75CFC12C2866D6F40025AE12 /* LoginViewModel.swift in Sources */,
