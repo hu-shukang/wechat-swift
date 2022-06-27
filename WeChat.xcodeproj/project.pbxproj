@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		75A5D81F2867CB02001BC141 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D81E2867CB02001BC141 /* HomeViewModel.swift */; };
 		75A5D8222867D30A001BC141 /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D8212867D30A001BC141 /* ChatPage.swift */; };
+		75A5D82F28681B5B001BC141 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D82E28681B5B001BC141 /* ChatRow.swift */; };
+		75A5D83228681BA8001BC141 /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D83128681BA8001BC141 /* ChatModel.swift */; };
+		75A5D83428681C03001BC141 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D83328681C03001BC141 /* UserModel.swift */; };
+		75A5D83728681E30001BC141 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D83628681E30001BC141 /* DateUtil.swift */; };
+		75A5D83A28683584001BC141 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 75A5D83928683584001BC141 /* Kingfisher */; };
 		75CFC1172866CFE40025AE12 /* WeChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC1162866CFE40025AE12 /* WeChatApp.swift */; };
 		75CFC1192866CFE40025AE12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC1182866CFE40025AE12 /* ContentView.swift */; };
 		75CFC11B2866CFE60025AE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CFC11A2866CFE60025AE12 /* Assets.xcassets */; };
@@ -24,6 +29,10 @@
 /* Begin PBXFileReference section */
 		75A5D81E2867CB02001BC141 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		75A5D8212867D30A001BC141 /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
+		75A5D82E28681B5B001BC141 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
+		75A5D83128681BA8001BC141 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		75A5D83328681C03001BC141 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		75A5D83628681E30001BC141 /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
 		75CFC1132866CFE40025AE12 /* WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CFC1162866CFE40025AE12 /* WeChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatApp.swift; sourceTree = "<group>"; };
 		75CFC1182866CFE40025AE12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -42,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A5D83A28683584001BC141 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +61,35 @@
 		75A5D8202867D2F1001BC141 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				75A5D82B28681B2C001BC141 /* Component */,
 				75A5D8212867D30A001BC141 /* ChatPage.swift */,
 			);
 			path = Chat;
+			sourceTree = "<group>";
+		};
+		75A5D82B28681B2C001BC141 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				75A5D82E28681B5B001BC141 /* ChatRow.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		75A5D83028681B76001BC141 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75A5D83128681BA8001BC141 /* ChatModel.swift */,
+				75A5D83328681C03001BC141 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		75A5D83528681E24001BC141 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				75A5D83628681E30001BC141 /* DateUtil.swift */,
+			);
+			path = Util;
 			sourceTree = "<group>";
 		};
 		75CFC10A2866CFE40025AE12 = {
@@ -106,6 +142,8 @@
 		75CFC1252866D38D0025AE12 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				75A5D83528681E24001BC141 /* Util */,
+				75A5D83028681B76001BC141 /* Model */,
 				75CFC12D2866D7A80025AE12 /* Extensions.swift */,
 				75CFC12F2866D8D70025AE12 /* Style.swift */,
 				75CFC1322866E15F0025AE12 /* GlobalViewModel.swift */,
@@ -147,6 +185,9 @@
 			dependencies = (
 			);
 			name = WeChat;
+			packageProductDependencies = (
+				75A5D83928683584001BC141 /* Kingfisher */,
+			);
 			productName = WeChat;
 			productReference = 75CFC1132866CFE40025AE12 /* WeChat.app */;
 			productType = "com.apple.product-type.application";
@@ -175,6 +216,9 @@
 				Base,
 			);
 			mainGroup = 75CFC10A2866CFE40025AE12;
+			packageReferences = (
+				75A5D83828683584001BC141 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 75CFC1142866CFE40025AE12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -201,16 +245,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75A5D82F28681B5B001BC141 /* ChatRow.swift in Sources */,
 				75CFC12E2866D7A80025AE12 /* Extensions.swift in Sources */,
 				75A5D81F2867CB02001BC141 /* HomeViewModel.swift in Sources */,
 				75CFC1332866E15F0025AE12 /* GlobalViewModel.swift in Sources */,
 				75CFC1302866D8D70025AE12 /* Style.swift in Sources */,
+				75A5D83428681C03001BC141 /* UserModel.swift in Sources */,
 				75A5D8222867D30A001BC141 /* ChatPage.swift in Sources */,
 				75CFC12C2866D6F40025AE12 /* LoginViewModel.swift in Sources */,
 				75CFC1192866CFE40025AE12 /* ContentView.swift in Sources */,
 				75CFC1272866D39E0025AE12 /* LoginPage.swift in Sources */,
 				75CFC1172866CFE40025AE12 /* WeChatApp.swift in Sources */,
 				75CFC1362866E21E0025AE12 /* HomePage.swift in Sources */,
+				75A5D83228681BA8001BC141 /* ChatModel.swift in Sources */,
+				75A5D83728681E30001BC141 /* DateUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +459,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75A5D83828683584001BC141 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75A5D83928683584001BC141 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75A5D83828683584001BC141 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 75CFC10B2866CFE40025AE12 /* Project object */;
 }
