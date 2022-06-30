@@ -11,4 +11,5 @@ import SwiftUI
 extension Color {
     static var inputBG = Color.black.opacity(0.05)
     static var primaryColor = Color("primaryColor")
+    static var bgColor = Color("bgColor")
 }

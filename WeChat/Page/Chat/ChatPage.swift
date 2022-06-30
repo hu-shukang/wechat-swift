@@ -8,16 +8,35 @@
 import SwiftUI
 
 struct ChatPage: View {
+    @EnvironmentObject var globalViewModel: GlobalViewModel
+    
     var body: some View {
         VStack {
-            Text("")
+            ScrollView {
+                Divider()
+                ForEach(globalViewModel.chatList) { chat in
+                    VStack {
+                        NavigationLink(destination: {
+                            Text("123")
+                        }) {
+                            ChatRow(chat: chat)
+                                .padding(.vertical, 7)
+                        }
+                        Divider()
+                    }
+                    .id(chat.id)
+                }
+            }
         }
-        
+        .padding(.horizontal, 14)
     }
 }
 
 struct ChatPage_Previews: PreviewProvider {
     static var previews: some View {
-        ChatPage()
+        NavigationView {
+            HomePage()
+                .environmentObject(GlobalViewModel())
+        }
     }
 }

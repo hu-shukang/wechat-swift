@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		755C6920286C6F1400DDAB19 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 755C691F286C6F1400DDAB19 /* Error.swift */; };
+		75632D26286986B0005D877B /* TestData.json in Resources */ = {isa = PBXBuildFile; fileRef = 75632D25286986B0005D877B /* TestData.json */; };
+		75632D2C28699FE3005D877B /* MessagePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75632D2B28699FE3005D877B /* MessagePage.swift */; };
+		75632D2F2869ADA6005D877B /* MessageRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75632D2E2869ADA6005D877B /* MessageRow.swift */; };
+		75632D322869AF5A005D877B /* Avator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75632D312869AF5A005D877B /* Avator.swift */; };
+		75632D342869B3CF005D877B /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75632D332869B3CF005D877B /* MessageViewModel.swift */; };
 		75A5D81F2867CB02001BC141 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D81E2867CB02001BC141 /* HomeViewModel.swift */; };
 		75A5D8222867D30A001BC141 /* ChatPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D8212867D30A001BC141 /* ChatPage.swift */; };
 		75A5D82F28681B5B001BC141 /* ChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D82E28681B5B001BC141 /* ChatRow.swift */; };
@@ -24,9 +30,28 @@
 		75CFC1302866D8D70025AE12 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC12F2866D8D70025AE12 /* Style.swift */; };
 		75CFC1332866E15F0025AE12 /* GlobalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC1322866E15F0025AE12 /* GlobalViewModel.swift */; };
 		75CFC1362866E21E0025AE12 /* HomePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC1352866E21E0025AE12 /* HomePage.swift */; };
+		75E7D126286DB600008207A3 /* NIO in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D125286DB600008207A3 /* NIO */; };
+		75E7D128286DB600008207A3 /* NIOConcurrencyHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D127286DB600008207A3 /* NIOConcurrencyHelpers */; };
+		75E7D12A286DB600008207A3 /* NIOCore in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D129286DB600008207A3 /* NIOCore */; };
+		75E7D12C286DB600008207A3 /* NIOEmbedded in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D12B286DB600008207A3 /* NIOEmbedded */; };
+		75E7D12E286DB600008207A3 /* NIOFoundationCompat in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D12D286DB600008207A3 /* NIOFoundationCompat */; };
+		75E7D130286DB600008207A3 /* NIOHTTP1 in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D12F286DB600008207A3 /* NIOHTTP1 */; };
+		75E7D132286DB600008207A3 /* NIOPosix in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D131286DB600008207A3 /* NIOPosix */; };
+		75E7D134286DB600008207A3 /* NIOTLS in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D133286DB600008207A3 /* NIOTLS */; };
+		75E7D136286DB600008207A3 /* NIOTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D135286DB600008207A3 /* NIOTestUtils */; };
+		75E7D138286DB600008207A3 /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D137286DB600008207A3 /* NIOWebSocket */; };
+		75E7D13A286DB600008207A3 /* _NIOConcurrency in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D139286DB600008207A3 /* _NIOConcurrency */; };
+		75E7D13C286DB835008207A3 /* HttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D13B286DB835008207A3 /* HttpUtil.swift */; };
+		75E7D13F286DC7BD008207A3 /* AnyCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D13E286DC7BD008207A3 /* AnyCodable */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		755C691F286C6F1400DDAB19 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
+		75632D25286986B0005D877B /* TestData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = TestData.json; sourceTree = "<group>"; };
+		75632D2B28699FE3005D877B /* MessagePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagePage.swift; sourceTree = "<group>"; };
+		75632D2E2869ADA6005D877B /* MessageRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageRow.swift; sourceTree = "<group>"; };
+		75632D312869AF5A005D877B /* Avator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Avator.swift; sourceTree = "<group>"; };
+		75632D332869B3CF005D877B /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
 		75A5D81E2867CB02001BC141 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		75A5D8212867D30A001BC141 /* ChatPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatPage.swift; sourceTree = "<group>"; };
 		75A5D82E28681B5B001BC141 /* ChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRow.swift; sourceTree = "<group>"; };
@@ -44,6 +69,7 @@
 		75CFC12F2866D8D70025AE12 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		75CFC1322866E15F0025AE12 /* GlobalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalViewModel.swift; sourceTree = "<group>"; };
 		75CFC1352866E21E0025AE12 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
+		75E7D13B286DB835008207A3 /* HttpUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,13 +77,59 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E7D128286DB600008207A3 /* NIOConcurrencyHelpers in Frameworks */,
+				75E7D132286DB600008207A3 /* NIOPosix in Frameworks */,
 				75A5D83A28683584001BC141 /* Kingfisher in Frameworks */,
+				75E7D13F286DC7BD008207A3 /* AnyCodable in Frameworks */,
+				75E7D13A286DB600008207A3 /* _NIOConcurrency in Frameworks */,
+				75E7D12A286DB600008207A3 /* NIOCore in Frameworks */,
+				75E7D130286DB600008207A3 /* NIOHTTP1 in Frameworks */,
+				75E7D136286DB600008207A3 /* NIOTestUtils in Frameworks */,
+				75E7D134286DB600008207A3 /* NIOTLS in Frameworks */,
+				75E7D126286DB600008207A3 /* NIO in Frameworks */,
+				75E7D12E286DB600008207A3 /* NIOFoundationCompat in Frameworks */,
+				75E7D138286DB600008207A3 /* NIOWebSocket in Frameworks */,
+				75E7D12C286DB600008207A3 /* NIOEmbedded in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75632D2728698B2D005D877B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				75632D25286986B0005D877B /* TestData.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		75632D2A28699FD3005D877B /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				75632D2D2869AD93005D877B /* Component */,
+				75632D2B28699FE3005D877B /* MessagePage.swift */,
+				75632D332869B3CF005D877B /* MessageViewModel.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		75632D2D2869AD93005D877B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				75632D2E2869ADA6005D877B /* MessageRow.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		75632D302869AF4F005D877B /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				75632D312869AF5A005D877B /* Avator.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		75A5D8202867D2F1001BC141 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +152,7 @@
 			children = (
 				75A5D83128681BA8001BC141 /* ChatModel.swift */,
 				75A5D83328681C03001BC141 /* UserModel.swift */,
+				755C691F286C6F1400DDAB19 /* Error.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -88,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				75A5D83628681E30001BC141 /* DateUtil.swift */,
+				75E7D13B286DB835008207A3 /* HttpUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -111,6 +185,7 @@
 		75CFC1152866CFE40025AE12 /* WeChat */ = {
 			isa = PBXGroup;
 			children = (
+				75632D2728698B2D005D877B /* Resource */,
 				75CFC1252866D38D0025AE12 /* Common */,
 				75CFC1242866D3790025AE12 /* Page */,
 				75CFC1162866CFE40025AE12 /* WeChatApp.swift */,
@@ -132,6 +207,7 @@
 		75CFC1242866D3790025AE12 /* Page */ = {
 			isa = PBXGroup;
 			children = (
+				75632D2A28699FD3005D877B /* Message */,
 				75A5D8202867D2F1001BC141 /* Chat */,
 				75CFC1342866E2100025AE12 /* Home */,
 				75CFC1282866D3A50025AE12 /* Login */,
@@ -142,6 +218,7 @@
 		75CFC1252866D38D0025AE12 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				75632D302869AF4F005D877B /* Component */,
 				75A5D83528681E24001BC141 /* Util */,
 				75A5D83028681B76001BC141 /* Model */,
 				75CFC12D2866D7A80025AE12 /* Extensions.swift */,
@@ -187,6 +264,18 @@
 			name = WeChat;
 			packageProductDependencies = (
 				75A5D83928683584001BC141 /* Kingfisher */,
+				75E7D125286DB600008207A3 /* NIO */,
+				75E7D127286DB600008207A3 /* NIOConcurrencyHelpers */,
+				75E7D129286DB600008207A3 /* NIOCore */,
+				75E7D12B286DB600008207A3 /* NIOEmbedded */,
+				75E7D12D286DB600008207A3 /* NIOFoundationCompat */,
+				75E7D12F286DB600008207A3 /* NIOHTTP1 */,
+				75E7D131286DB600008207A3 /* NIOPosix */,
+				75E7D133286DB600008207A3 /* NIOTLS */,
+				75E7D135286DB600008207A3 /* NIOTestUtils */,
+				75E7D137286DB600008207A3 /* NIOWebSocket */,
+				75E7D139286DB600008207A3 /* _NIOConcurrency */,
+				75E7D13E286DC7BD008207A3 /* AnyCodable */,
 			);
 			productName = WeChat;
 			productReference = 75CFC1132866CFE40025AE12 /* WeChat.app */;
@@ -218,6 +307,8 @@
 			mainGroup = 75CFC10A2866CFE40025AE12;
 			packageReferences = (
 				75A5D83828683584001BC141 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */,
+				75E7D13D286DC7BD008207A3 /* XCRemoteSwiftPackageReference "AnyCodable" */,
 			);
 			productRefGroup = 75CFC1142866CFE40025AE12 /* Products */;
 			projectDirPath = "";
@@ -234,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				75CFC11E2866CFE60025AE12 /* Preview Assets.xcassets in Resources */,
+				75632D26286986B0005D877B /* TestData.json in Resources */,
 				75CFC11B2866CFE60025AE12 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75632D322869AF5A005D877B /* Avator.swift in Sources */,
 				75A5D82F28681B5B001BC141 /* ChatRow.swift in Sources */,
 				75CFC12E2866D7A80025AE12 /* Extensions.swift in Sources */,
 				75A5D81F2867CB02001BC141 /* HomeViewModel.swift in Sources */,
@@ -253,12 +346,17 @@
 				75A5D83428681C03001BC141 /* UserModel.swift in Sources */,
 				75A5D8222867D30A001BC141 /* ChatPage.swift in Sources */,
 				75CFC12C2866D6F40025AE12 /* LoginViewModel.swift in Sources */,
+				75632D2F2869ADA6005D877B /* MessageRow.swift in Sources */,
+				75632D342869B3CF005D877B /* MessageViewModel.swift in Sources */,
+				75E7D13C286DB835008207A3 /* HttpUtil.swift in Sources */,
 				75CFC1192866CFE40025AE12 /* ContentView.swift in Sources */,
 				75CFC1272866D39E0025AE12 /* LoginPage.swift in Sources */,
 				75CFC1172866CFE40025AE12 /* WeChatApp.swift in Sources */,
 				75CFC1362866E21E0025AE12 /* HomePage.swift in Sources */,
 				75A5D83228681BA8001BC141 /* ChatModel.swift in Sources */,
 				75A5D83728681E30001BC141 /* DateUtil.swift in Sources */,
+				75632D2C28699FE3005D877B /* MessagePage.swift in Sources */,
+				755C6920286C6F1400DDAB19 /* Error.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +567,22 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-nio.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+		75E7D13D286DC7BD008207A3 /* XCRemoteSwiftPackageReference "AnyCodable" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Flight-School/AnyCodable";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -476,6 +590,66 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 75A5D83828683584001BC141 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		75E7D125286DB600008207A3 /* NIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIO;
+		};
+		75E7D127286DB600008207A3 /* NIOConcurrencyHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOConcurrencyHelpers;
+		};
+		75E7D129286DB600008207A3 /* NIOCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOCore;
+		};
+		75E7D12B286DB600008207A3 /* NIOEmbedded */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOEmbedded;
+		};
+		75E7D12D286DB600008207A3 /* NIOFoundationCompat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOFoundationCompat;
+		};
+		75E7D12F286DB600008207A3 /* NIOHTTP1 */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOHTTP1;
+		};
+		75E7D131286DB600008207A3 /* NIOPosix */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOPosix;
+		};
+		75E7D133286DB600008207A3 /* NIOTLS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTLS;
+		};
+		75E7D135286DB600008207A3 /* NIOTestUtils */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOTestUtils;
+		};
+		75E7D137286DB600008207A3 /* NIOWebSocket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = NIOWebSocket;
+		};
+		75E7D139286DB600008207A3 /* _NIOConcurrency */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */;
+			productName = _NIOConcurrency;
+		};
+		75E7D13E286DC7BD008207A3 /* AnyCodable */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75E7D13D286DC7BD008207A3 /* XCRemoteSwiftPackageReference "AnyCodable" */;
+			productName = AnyCodable;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

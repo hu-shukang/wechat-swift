@@ -7,14 +7,15 @@
 
 import Foundation
 
-struct MessageModel: Identifiable {
+struct MessageModel: Identifiable, Decodable {
     var id: String
     var from: String
     var to: String
+    var message: String
     var timestamp: Int
 }
 
-struct ChatModel: Identifiable {
+struct ChatModel: Identifiable, Decodable {
     var user: UserModel
     var unread: Bool
     var messageList: [MessageModel]
@@ -28,5 +29,13 @@ struct ChatModel: Identifiable {
             return ""
         }
         return DateUtil.instance.formatTime(unix: timestamp)
+    }
+    
+    var latestMessageTimestamp: Int? {
+        return messageList.last?.timestamp
+    }
+    
+    var lastestMessage: String? {
+        return messageList.last?.message
     }
 }

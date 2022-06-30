@@ -11,6 +11,10 @@ import SwiftUI
 struct WeChatApp: App {
     @StateObject var globalViewModel = GlobalViewModel()
     
+    init() {
+        globalViewModel.logout()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -18,17 +18,17 @@ struct LoginPage: View {
                 .bold()
                 .padding(.bottom, 50)
             
-            TextField("アカウントID", text: $loginViewModel.accountId)
+            TextField("アカウントID", text: $loginViewModel.form.name)
                 .modifier(TextFieldStyle())
                 .padding(.bottom, 20)
             
-            SecureField("パスワード", text: $loginViewModel.password)
+            SecureField("パスワード", text: $loginViewModel.form.password)
                 .modifier(TextFieldStyle())
                 .padding(.bottom, 50)
             
             Button(action: {
                 loginViewModel.login()
-                globalViewModel.loginStatus.toggle()
+//                globalViewModel.loginStatus.toggle()
             }, label: {
                 Text("ログイン")
                     .modifier(LargeButtonLabelStyle())
@@ -38,7 +38,7 @@ struct LoginPage: View {
                     Text("OK")
                 })
             }, message: {
-                Text("アカウントIDやパスワードは不正です")
+                Text(loginViewModel.loginErrorMessage)
             })
             
         }

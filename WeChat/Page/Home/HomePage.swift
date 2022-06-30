@@ -11,6 +11,10 @@ struct HomePage: View {
     @EnvironmentObject var globalViewModel: GlobalViewModel
     @StateObject var homeViewModel = HomeViewModel()
     
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(Color.bgColor)
+    }
+    
     var body: some View {
         VStack(spacing: 0) {
             TabView(selection: $homeViewModel.activeTab) {

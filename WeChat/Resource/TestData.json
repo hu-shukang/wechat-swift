@@ -1,0 +1,50 @@
+[
+    {
+        "user": {
+            "id": "U001",
+            "name": "U001さん",
+            "avator": "https://images.unsplash.com/photo-1430990480609-2bf7c02a6b1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8ZnJlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        "unread": false,
+        "messageList": [
+            {
+                "id": "M001",
+                "from": "me",
+                "to": "U001",
+                "message": "こんにちは",
+                "timestamp": 1655625207
+            },
+            {
+                "id": "M002",
+                "from": "U001",
+                "to": "me",
+                "message": "こんにちは!!!",
+                "timestamp": 1656279492
+            }
+        ]
+    },
+    {
+        "user": {
+            "id": "U002",
+            "name": "U002さん",
+            "avator": "https://images.unsplash.com/photo-1536782376847-5c9d14d97cc0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8ZnJlZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
+        },
+        "unread": true,
+        "messageList": [
+            {
+                "id": "M001",
+                "from": "me",
+                "to": "U002",
+                "message": "こんにちは",
+                "timestamp": 1656193092
+            },
+            {
+                "id": "M002",
+                "from": "U002",
+                "to": "me",
+                "message": "こんにちは!!!",
+                "timestamp": 1656193212
+            }
+        ]
+    }
+]
