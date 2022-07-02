@@ -13,3 +13,14 @@ extension Color {
     static var primaryColor = Color("primaryColor")
     static var bgColor = Color("bgColor")
 }
+
+extension View {
+    func withErrorHandling() -> some View {
+        modifier(HandleErrorByShowingAlertViewModifier())
+    }
+}
+
+
+extension String: LocalizedError {
+    public var errorDescription: String? { return self }
+}

@@ -12,6 +12,8 @@ class GlobalViewModel: ObservableObject {
     @AppStorage("login_status") var loginStatus: Bool = false
     
     @Published var chatList: [ChatModel] = []
+    @Published var errorMessage: String = ""
+    @Published var authErrorMessage: String = ""
     
     init() {
         chatList = loadData()
@@ -25,6 +27,7 @@ class GlobalViewModel: ObservableObject {
             return aTime > bTime
         })
     }
+    
     
     func logout() {
         loginStatus = false

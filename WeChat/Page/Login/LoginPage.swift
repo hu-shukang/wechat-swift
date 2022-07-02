@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct LoginPage: View {
-    @StateObject var loginViewModel = LoginViewModel();
     @EnvironmentObject var globalViewModel: GlobalViewModel
+    @EnvironmentObject var errorHandling: ErrorHandling
+    @StateObject var loginViewModel = LoginViewModel()
+    
     
     var body: some View {
         VStack {
@@ -27,8 +29,9 @@ struct LoginPage: View {
                 .padding(.bottom, 50)
             
             Button(action: {
-                loginViewModel.login()
-//                globalViewModel.loginStatus.toggle()
+                Task {
+                    await loginViewModel.login(errorHandling: self.errorHandling)
+                }
             }, label: {
                 Text("ログイン")
                     .modifier(LargeButtonLabelStyle())
@@ -53,5 +56,6 @@ struct LoginPage_Previews: PreviewProvider {
             LoginPage()
         }
         .environmentObject(GlobalViewModel())
+        .environmentObject(ErrorHandling())
     }
 }

@@ -20,6 +20,8 @@
 		75A5D83428681C03001BC141 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D83328681C03001BC141 /* UserModel.swift */; };
 		75A5D83728681E30001BC141 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75A5D83628681E30001BC141 /* DateUtil.swift */; };
 		75A5D83A28683584001BC141 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 75A5D83928683584001BC141 /* Kingfisher */; };
+		75CF54A4286FBFE400B4A498 /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CF54A3286FBFE400B4A498 /* ErrorHandling.swift */; };
+		75CF54A72870171000B4A498 /* AsyncHTTPClient in Frameworks */ = {isa = PBXBuildFile; productRef = 75CF54A62870171000B4A498 /* AsyncHTTPClient */; };
 		75CFC1172866CFE40025AE12 /* WeChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC1162866CFE40025AE12 /* WeChatApp.swift */; };
 		75CFC1192866CFE40025AE12 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75CFC1182866CFE40025AE12 /* ContentView.swift */; };
 		75CFC11B2866CFE60025AE12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75CFC11A2866CFE60025AE12 /* Assets.xcassets */; };
@@ -41,7 +43,6 @@
 		75E7D136286DB600008207A3 /* NIOTestUtils in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D135286DB600008207A3 /* NIOTestUtils */; };
 		75E7D138286DB600008207A3 /* NIOWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D137286DB600008207A3 /* NIOWebSocket */; };
 		75E7D13A286DB600008207A3 /* _NIOConcurrency in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D139286DB600008207A3 /* _NIOConcurrency */; };
-		75E7D13C286DB835008207A3 /* HttpUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E7D13B286DB835008207A3 /* HttpUtil.swift */; };
 		75E7D13F286DC7BD008207A3 /* AnyCodable in Frameworks */ = {isa = PBXBuildFile; productRef = 75E7D13E286DC7BD008207A3 /* AnyCodable */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,7 @@
 		75A5D83128681BA8001BC141 /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		75A5D83328681C03001BC141 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		75A5D83628681E30001BC141 /* DateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
+		75CF54A3286FBFE400B4A498 /* ErrorHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 		75CFC1132866CFE40025AE12 /* WeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75CFC1162866CFE40025AE12 /* WeChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeChatApp.swift; sourceTree = "<group>"; };
 		75CFC1182866CFE40025AE12 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -69,7 +71,6 @@
 		75CFC12F2866D8D70025AE12 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		75CFC1322866E15F0025AE12 /* GlobalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalViewModel.swift; sourceTree = "<group>"; };
 		75CFC1352866E21E0025AE12 /* HomePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePage.swift; sourceTree = "<group>"; };
-		75E7D13B286DB835008207A3 /* HttpUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +88,7 @@
 				75E7D136286DB600008207A3 /* NIOTestUtils in Frameworks */,
 				75E7D134286DB600008207A3 /* NIOTLS in Frameworks */,
 				75E7D126286DB600008207A3 /* NIO in Frameworks */,
+				75CF54A72870171000B4A498 /* AsyncHTTPClient in Frameworks */,
 				75E7D12E286DB600008207A3 /* NIOFoundationCompat in Frameworks */,
 				75E7D138286DB600008207A3 /* NIOWebSocket in Frameworks */,
 				75E7D12C286DB600008207A3 /* NIOEmbedded in Frameworks */,
@@ -161,7 +163,6 @@
 			isa = PBXGroup;
 			children = (
 				75A5D83628681E30001BC141 /* DateUtil.swift */,
-				75E7D13B286DB835008207A3 /* HttpUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -224,6 +225,7 @@
 				75CFC12D2866D7A80025AE12 /* Extensions.swift */,
 				75CFC12F2866D8D70025AE12 /* Style.swift */,
 				75CFC1322866E15F0025AE12 /* GlobalViewModel.swift */,
+				75CF54A3286FBFE400B4A498 /* ErrorHandling.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -276,6 +278,7 @@
 				75E7D137286DB600008207A3 /* NIOWebSocket */,
 				75E7D139286DB600008207A3 /* _NIOConcurrency */,
 				75E7D13E286DC7BD008207A3 /* AnyCodable */,
+				75CF54A62870171000B4A498 /* AsyncHTTPClient */,
 			);
 			productName = WeChat;
 			productReference = 75CFC1132866CFE40025AE12 /* WeChat.app */;
@@ -309,6 +312,7 @@
 				75A5D83828683584001BC141 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */,
 				75E7D13D286DC7BD008207A3 /* XCRemoteSwiftPackageReference "AnyCodable" */,
+				75CF54A52870171000B4A498 /* XCRemoteSwiftPackageReference "async-http-client" */,
 			);
 			productRefGroup = 75CFC1142866CFE40025AE12 /* Products */;
 			projectDirPath = "";
@@ -346,9 +350,9 @@
 				75A5D83428681C03001BC141 /* UserModel.swift in Sources */,
 				75A5D8222867D30A001BC141 /* ChatPage.swift in Sources */,
 				75CFC12C2866D6F40025AE12 /* LoginViewModel.swift in Sources */,
+				75CF54A4286FBFE400B4A498 /* ErrorHandling.swift in Sources */,
 				75632D2F2869ADA6005D877B /* MessageRow.swift in Sources */,
 				75632D342869B3CF005D877B /* MessageViewModel.swift in Sources */,
-				75E7D13C286DB835008207A3 /* HttpUtil.swift in Sources */,
 				75CFC1192866CFE40025AE12 /* ContentView.swift in Sources */,
 				75CFC1272866D39E0025AE12 /* LoginPage.swift in Sources */,
 				75CFC1172866CFE40025AE12 /* WeChatApp.swift in Sources */,
@@ -567,6 +571,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		75CF54A52870171000B4A498 /* XCRemoteSwiftPackageReference "async-http-client" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swift-server/async-http-client";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
 		75E7D124286DB5FF008207A3 /* XCRemoteSwiftPackageReference "swift-nio" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-nio.git";
@@ -590,6 +602,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 75A5D83828683584001BC141 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		75CF54A62870171000B4A498 /* AsyncHTTPClient */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75CF54A52870171000B4A498 /* XCRemoteSwiftPackageReference "async-http-client" */;
+			productName = AsyncHTTPClient;
 		};
 		75E7D125286DB600008207A3 /* NIO */ = {
 			isa = XCSwiftPackageProductDependency;

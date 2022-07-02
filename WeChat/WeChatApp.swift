@@ -18,6 +18,7 @@ struct WeChatApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .withErrorHandling()
                 .environmentObject(globalViewModel)
         }
     }
