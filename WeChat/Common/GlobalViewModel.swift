@@ -10,6 +10,7 @@ import SwiftUI
 
 class GlobalViewModel: ObservableObject {
     @AppStorage("login_status") var loginStatus: Bool = false
+    @AppStorage("token") var token: String = ""
     
     @Published var chatList: [ChatModel] = []
     @Published var errorMessage: String = ""

@@ -14,11 +14,9 @@ class LoginViewModel: ObservableObject {
     @Published var loginError: Bool = false
     @Published var loginErrorMessage: String = ""
     
-    @AppStorage("token") var token: String = ""
-    
     let loginUrl = "https://wpaa20qki0.execute-api.ap-northeast-1.amazonaws.com/Dev/user/login"
     
-    func login(errorHandling: ErrorHandling) async {
+    func login(errorHandling: ErrorHandling, globalViewModel: GlobalViewModel) async {
         let httpClient = HTTPClient(eventLoopGroupProvider: .createNew)
         do {
             let requestBody = try JSONEncoder().encode(form)
@@ -28,7 +26,9 @@ class LoginViewModel: ObservableObject {
             let response = try await httpClient.execute(request, timeout: .seconds(30))
             let body = try await response.body.collect(upTo: 1024 * 1024)
             if response.status == .ok {
-                print("OK")
+                let resp = try JSONDecoder().decode(LoginResponse.self, from: body)
+                globalViewModel.token = resp.token
+                globalViewModel.loginStatus = true
             } else if response.status == .badRequest {
                 let err = try JSONDecoder().decode(ResponseError<[ValidateInfo]>.self, from: body)
                 errorHandling.handle(error: err)

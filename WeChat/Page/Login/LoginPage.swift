@@ -30,7 +30,7 @@ struct LoginPage: View {
             
             Button(action: {
                 Task {
-                    await loginViewModel.login(errorHandling: self.errorHandling)
+                    await loginViewModel.login(errorHandling: self.errorHandling, globalViewModel: self.globalViewModel)
                 }
             }, label: {
                 Text("ログイン")
@@ -43,6 +43,12 @@ struct LoginPage: View {
             }, message: {
                 Text(loginViewModel.loginErrorMessage)
             })
+            
+            Button(action: {}, label: {
+                Text("新規登録")
+                    .modifier(LargeSecoundaryButtonLabelStyle())
+            })
+            .padding(.top, 8)
             
         }
         .padding()
